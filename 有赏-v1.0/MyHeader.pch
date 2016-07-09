@@ -1,0 +1,17 @@
+//
+//  MyHeader.pch
+//  有赏-v1.0
+//
+//  Created by xfy on 15/12/28.
+//  Copyright © 2015年 xfy. All rights reserved.
+//
+
+#ifndef MyHeader_pch
+#define MyHeader_pch
+#import "DefineHeader.h"
+#import <BmobSDK/Bmob.h>
+#import <UIView+Toast.h>
+#import "CheckNetWork.h"
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#endif /* MyHeader_pch */

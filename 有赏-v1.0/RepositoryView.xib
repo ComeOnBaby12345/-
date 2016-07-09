@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="RepositoryViewHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="341" height="283"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <searchBar contentMode="redraw" placeholder="请输入悬赏标签" translatesAutoresizingMaskIntoConstraints="NO" id="Oku-sS-shr">
+                    <rect key="frame" x="0.0" y="0.0" width="341" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="341" id="EmZ-JL-7pB"/>
+                        <constraint firstAttribute="height" constant="44" id="Exk-zX-I7X"/>
+                        <constraint firstAttribute="width" secondItem="Oku-sS-shr" secondAttribute="height" multiplier="31:4" id="ZKc-cy-wSQ"/>
+                    </constraints>
+                    <textInputTraits key="textInputTraits"/>
+                </searchBar>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="标签栏" translatesAutoresizingMaskIntoConstraints="NO" id="qEe-6B-GiV">
+                    <rect key="frame" x="0.0" y="44" width="341" height="202"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="qEe-6B-GiV" secondAttribute="height" multiplier="341:202" id="P5s-vc-kbG"/>
+                        <constraint firstAttribute="height" constant="202" id="PWX-CU-Tp6"/>
+                        <constraint firstAttribute="width" constant="341" id="WmX-2g-MTD"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Oku-sS-shr" secondAttribute="trailing" id="B8B-1L-OJO"/>
+                <constraint firstAttribute="trailing" secondItem="qEe-6B-GiV" secondAttribute="trailing" id="Mrz-M3-oXA"/>
+                <constraint firstItem="Oku-sS-shr" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="T2O-qO-sUA"/>
+                <constraint firstItem="qEe-6B-GiV" firstAttribute="top" secondItem="Oku-sS-shr" secondAttribute="bottom" id="XzI-HZ-dzJ"/>
+                <constraint firstItem="Oku-sS-shr" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="pfD-kF-nON"/>
+                <constraint firstItem="qEe-6B-GiV" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="pzA-z5-ewJ"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="search" destination="Oku-sS-shr" id="ws0-cF-KKk"/>
+            </connections>
+            <point key="canvasLocation" x="388.5" y="203.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="标签栏" width="574" height="371"/>
+    </resources>
+</document>

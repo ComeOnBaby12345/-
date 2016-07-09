@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view autoresizesSubviews="NO" contentMode="scaleToFill" id="iN0-l3-epB" customClass="PCheaderView">
+            <rect key="frame" x="0.0" y="0.0" width="319" height="188"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="个人中心Image" translatesAutoresizingMaskIntoConstraints="NO" id="gU7-6K-zAH">
+                    <rect key="frame" x="0.0" y="0.0" width="319" height="188"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="默认头像" translatesAutoresizingMaskIntoConstraints="NO" id="RfA-dC-ggW">
+                    <rect key="frame" x="124" y="14" width="70" height="70"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" id="VFk-uK-iJH"/>
+                        <constraint firstAttribute="height" constant="70" id="eAJ-Wd-jpq"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="俊才" translatesAutoresizingMaskIntoConstraints="NO" id="Xfk-bl-Bdp">
+                    <rect key="frame" x="110" y="152" width="98" height="23"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="Xfk-bl-Bdp" secondAttribute="height" multiplier="98:23" id="yq1-yO-XoQ"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="旺财" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f11-cs-uGt">
+                    <rect key="frame" x="0.0" y="100" width="319" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="f11-cs-uGt" secondAttribute="height" multiplier="319:21" id="tHJ-kY-KIC"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="gU7-6K-zAH" secondAttribute="bottom" id="76I-FA-yYK"/>
+                <constraint firstItem="RfA-dC-ggW" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="14" id="B3G-qf-OPM"/>
+                <constraint firstItem="RfA-dC-ggW" firstAttribute="centerX" secondItem="f11-cs-uGt" secondAttribute="centerX" id="D6F-nR-Gbi"/>
+                <constraint firstItem="Xfk-bl-Bdp" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="110" id="DbP-Xr-AC7"/>
+                <constraint firstAttribute="trailing" secondItem="f11-cs-uGt" secondAttribute="trailing" id="GBw-JI-CiP"/>
+                <constraint firstAttribute="bottom" secondItem="Xfk-bl-Bdp" secondAttribute="bottom" constant="13" id="NC9-se-lCX"/>
+                <constraint firstAttribute="trailing" secondItem="Xfk-bl-Bdp" secondAttribute="trailing" constant="111" id="Pel-Gn-hra"/>
+                <constraint firstItem="f11-cs-uGt" firstAttribute="top" secondItem="RfA-dC-ggW" secondAttribute="bottom" constant="16" id="RHw-KD-9dt"/>
+                <constraint firstItem="Xfk-bl-Bdp" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="110" id="Rfn-Tl-Fc4"/>
+                <constraint firstItem="Xfk-bl-Bdp" firstAttribute="top" secondItem="f11-cs-uGt" secondAttribute="bottom" constant="31" id="SAP-lG-lYC"/>
+                <constraint firstItem="gU7-6K-zAH" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="V4o-Zf-F9Q"/>
+                <constraint firstItem="f11-cs-uGt" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Zzs-fp-wDI"/>
+                <constraint firstAttribute="trailing" secondItem="gU7-6K-zAH" secondAttribute="trailing" id="akW-NH-L1Z"/>
+                <constraint firstItem="gU7-6K-zAH" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="npg-lp-PDR"/>
+                <constraint firstAttribute="trailing" secondItem="Xfk-bl-Bdp" secondAttribute="trailing" constant="111" id="oG3-mc-Oqw"/>
+                <constraint firstAttribute="bottom" secondItem="Xfk-bl-Bdp" secondAttribute="bottom" constant="13" id="p7X-26-Y3S"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="NC9-se-lCX"/>
+                    <exclude reference="Pel-Gn-hra"/>
+                    <exclude reference="Rfn-Tl-Fc4"/>
+                    <exclude reference="SAP-lG-lYC"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="nameImage" destination="Xfk-bl-Bdp" id="MTd-aR-MwB"/>
+                <outlet property="userName" destination="f11-cs-uGt" id="Z4D-c4-H5m"/>
+                <outlet property="userPhoto" destination="RfA-dC-ggW" id="QcE-cw-vle"/>
+            </connections>
+            <point key="canvasLocation" x="471.5" y="137"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="个人中心Image" width="320" height="150"/>
+        <image name="俊才" width="211" height="48"/>
+        <image name="默认头像" width="1200" height="1200"/>
+    </resources>
+</document>

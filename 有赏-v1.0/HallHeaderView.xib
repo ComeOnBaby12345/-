@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="HallHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="312"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Szn-Qk-tQs">
+                    <rect key="frame" x="8" y="0.0" width="304" height="190"/>
+                    <animations/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="Szn-Qk-tQs" secondAttribute="height" multiplier="19:8" id="FSY-AW-6cx"/>
+                        <constraint firstAttribute="width" secondItem="Szn-Qk-tQs" secondAttribute="height" multiplier="19:8" id="odp-zN-ljB"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="FSY-AW-6cx"/>
+                            <exclude reference="odp-zN-ljB"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <outlet property="delegate" destination="iN0-l3-epB" id="Jus-6g-7zE"/>
+                    </connections>
+                </scrollView>
+                <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="r9W-aX-GMi">
+                    <rect key="frame" x="140" y="156" width="39" height="37"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="r9W-aX-GMi" secondAttribute="height" multiplier="39:37" id="1e2-kp-HD2"/>
+                        <constraint firstAttribute="width" secondItem="r9W-aX-GMi" secondAttribute="height" multiplier="39:37" id="ike-PW-jdr"/>
+                    </constraints>
+                    <color key="pageIndicatorTintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="currentPageIndicatorTintColor" red="0.36862745099999999" green="0.96470588239999999" blue="0.98431372549999996" alpha="1" colorSpace="calibratedRGB"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="1e2-kp-HD2"/>
+                            <exclude reference="ike-PW-jdr"/>
+                        </mask>
+                    </variation>
+                </pageControl>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="边框4" translatesAutoresizingMaskIntoConstraints="NO" id="yJA-nV-g9d">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="203"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="yJA-nV-g9d" secondAttribute="height" multiplier="320:139" id="2Ni-CY-kIE"/>
+                        <constraint firstAttribute="width" secondItem="yJA-nV-g9d" secondAttribute="height" multiplier="320:139" id="EYs-o3-Gfy"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="2Ni-CY-kIE"/>
+                            <exclude reference="EYs-o3-Gfy"/>
+                        </mask>
+                    </variation>
+                </imageView>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="5kg-Ee-GYR">
+                    <rect key="frame" x="0.0" y="203" width="320" height="109"/>
+                    <animations/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="5kg-Ee-GYR" secondAttribute="height" multiplier="320:109" id="XmG-gx-m4S"/>
+                        <constraint firstAttribute="width" secondItem="5kg-Ee-GYR" secondAttribute="height" multiplier="160:61" id="fmp-VE-bdT"/>
+                    </constraints>
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Mjr-PS-MJp">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="fmp-VE-bdT"/>
+                        </mask>
+                    </variation>
+                </collectionView>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="5kg-Ee-GYR" firstAttribute="top" secondItem="r9W-aX-GMi" secondAttribute="bottom" constant="10" id="5Mm-mQ-NNZ"/>
+                <constraint firstAttribute="trailing" secondItem="r9W-aX-GMi" secondAttribute="trailing" constant="141" id="5oa-Rz-JA9"/>
+                <constraint firstAttribute="bottom" secondItem="5kg-Ee-GYR" secondAttribute="bottom" id="69d-nH-Jxi"/>
+                <constraint firstAttribute="trailing" secondItem="yJA-nV-g9d" secondAttribute="trailing" id="7hi-ys-B0S"/>
+                <constraint firstItem="5kg-Ee-GYR" firstAttribute="top" secondItem="yJA-nV-g9d" secondAttribute="bottom" id="95U-Nh-LUu"/>
+                <constraint firstAttribute="trailing" secondItem="Szn-Qk-tQs" secondAttribute="trailing" constant="8" id="AMC-Rc-qBn"/>
+                <constraint firstAttribute="trailing" secondItem="yJA-nV-g9d" secondAttribute="trailing" id="Bwo-8h-QFc"/>
+                <constraint firstAttribute="trailing" secondItem="r9W-aX-GMi" secondAttribute="trailing" constant="141" id="DLL-Y7-nPK"/>
+                <constraint firstItem="Szn-Qk-tQs" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="I7I-mH-AxE"/>
+                <constraint firstItem="5kg-Ee-GYR" firstAttribute="top" secondItem="Szn-Qk-tQs" secondAttribute="bottom" constant="13" id="K6z-Nb-eFF"/>
+                <constraint firstItem="yJA-nV-g9d" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="KFe-aO-Fe9"/>
+                <constraint firstItem="yJA-nV-g9d" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="LmV-7r-y46"/>
+                <constraint firstItem="r9W-aX-GMi" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="140" id="Mg0-1y-41s"/>
+                <constraint firstItem="5kg-Ee-GYR" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="OFZ-0T-Cxf"/>
+                <constraint firstItem="5kg-Ee-GYR" firstAttribute="top" secondItem="Szn-Qk-tQs" secondAttribute="bottom" id="QNh-vh-z5u"/>
+                <constraint firstItem="Szn-Qk-tQs" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="YZ2-78-Efb"/>
+                <constraint firstAttribute="trailing" secondItem="Szn-Qk-tQs" secondAttribute="trailing" constant="8" id="Zkk-YQ-qVv"/>
+                <constraint firstItem="Szn-Qk-tQs" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="Zq2-32-qKr"/>
+                <constraint firstItem="5kg-Ee-GYR" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="bKr-Ip-ujV"/>
+                <constraint firstItem="Szn-Qk-tQs" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="eYQ-YU-mXP"/>
+                <constraint firstItem="yJA-nV-g9d" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="fRc-B8-ES9"/>
+                <constraint firstAttribute="bottom" secondItem="5kg-Ee-GYR" secondAttribute="bottom" id="fhz-V7-pbi"/>
+                <constraint firstItem="yJA-nV-g9d" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="lo0-k4-Vip"/>
+                <constraint firstAttribute="bottom" secondItem="5kg-Ee-GYR" secondAttribute="bottom" id="pMC-i2-FgT"/>
+                <constraint firstItem="5kg-Ee-GYR" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="uOb-el-as2"/>
+                <constraint firstAttribute="trailing" secondItem="5kg-Ee-GYR" secondAttribute="trailing" id="vEZ-ti-CXo"/>
+                <constraint firstAttribute="trailing" secondItem="5kg-Ee-GYR" secondAttribute="trailing" id="vQ4-J9-3Pa"/>
+                <constraint firstAttribute="trailing" secondItem="5kg-Ee-GYR" secondAttribute="trailing" id="vzj-fG-Ye6"/>
+                <constraint firstItem="5kg-Ee-GYR" firstAttribute="top" secondItem="r9W-aX-GMi" secondAttribute="bottom" constant="1" id="zJy-ZG-SAt"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="7hi-ys-B0S"/>
+                    <exclude reference="KFe-aO-Fe9"/>
+                    <exclude reference="lo0-k4-Vip"/>
+                    <exclude reference="YZ2-78-Efb"/>
+                    <exclude reference="Zkk-YQ-qVv"/>
+                    <exclude reference="eYQ-YU-mXP"/>
+                    <exclude reference="69d-nH-Jxi"/>
+                    <exclude reference="OFZ-0T-Cxf"/>
+                    <exclude reference="QNh-vh-z5u"/>
+                    <exclude reference="fhz-V7-pbi"/>
+                    <exclude reference="uOb-el-as2"/>
+                    <exclude reference="vEZ-ti-CXo"/>
+                    <exclude reference="vzj-fG-Ye6"/>
+                    <exclude reference="zJy-ZG-SAt"/>
+                    <exclude reference="5oa-Rz-JA9"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="headerCollectionView" destination="5kg-Ee-GYR" id="GLO-Y3-JkW"/>
+                <outlet property="headerPageControl" destination="r9W-aX-GMi" id="X9h-Ic-ja8"/>
+                <outlet property="headerScrollView" destination="Szn-Qk-tQs" id="Sx6-Cm-yoH"/>
+            </connections>
+            <point key="canvasLocation" x="330" y="263"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="边框4" width="359" height="177"/>
+    </resources>
+</document>

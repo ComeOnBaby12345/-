@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="PCfootView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="104"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2Mi-Hd-foz">
+                    <rect key="frame" x="51" y="0.0" width="272" height="104"/>
+                    <state key="normal">
+                        <attributedString key="attributedTitle">
+                            <fragment content="退出登录">
+                                <attributes>
+                                    <color key="NSColor" red="0.36862745099999999" green="0.96470588239999999" blue="0.98431372549999996" alpha="1" colorSpace="calibratedRGB"/>
+                                    <font key="NSFont" size="17" name="PingFangSC-Regular"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                    </state>
+                    <connections>
+                        <action selector="exit:" destination="iN0-l3-epB" eventType="touchUpInside" id="7QJ-YX-cmA"/>
+                    </connections>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstItem="2Mi-Hd-foz" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="51" id="83d-mA-woZ"/>
+                <constraint firstAttribute="trailing" secondItem="2Mi-Hd-foz" secondAttribute="trailing" constant="52" id="X3Z-lO-tBu"/>
+                <constraint firstItem="2Mi-Hd-foz" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="cKP-8p-thB"/>
+                <constraint firstAttribute="bottom" secondItem="2Mi-Hd-foz" secondAttribute="bottom" id="dLg-Ea-1Nz"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="back" destination="2Mi-Hd-foz" id="0Z7-cE-JJ7"/>
+            </connections>
+            <point key="canvasLocation" x="211.5" y="280"/>
+        </view>
+    </objects>
+</document>
