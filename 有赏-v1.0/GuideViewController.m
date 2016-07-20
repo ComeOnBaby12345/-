@@ -13,7 +13,7 @@
     UIPageControl *pageControl;
 }
 @end
-
+//我是媛媛
 @implementation GuideViewController
 static NSString * const reuseIdentifier = @"Cell";
 
